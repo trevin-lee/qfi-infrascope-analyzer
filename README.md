@@ -59,6 +59,7 @@ value = analyzer.get_pixel_value(frame=0, height=100, width=100)
 max_value = analyzer.maximum_value_in_frame(frame=0)
 min_value = analyzer.minimum_value_in_frame(frame=0)
 avg_value = analyzer.average_value_in_frame(frame=0)
+std_value = analyzer.standard_deviation_in_frame(frame=0)
 
 # Get entire frame data
 frame_data = analyzer.get_frame(frame=0)
@@ -81,7 +82,8 @@ The analyzer provides several methods for analyzing frame data:
 - `maximum_value_in_frame(frame)`: Get maximum value in frame
 - `minimum_value_in_frame(frame)`: Get minimum value in frame
 - `average_value_in_frame(frame)`: Get average value in frame
-- `get_frame(frame)`: Get complete frame data as numpy array
+- `standard_deviation_in_frame(frame)`: Get average value in frame
+- `get_frame_array(frame)`: Get complete frame data as numpy array
 
 ### Output
 

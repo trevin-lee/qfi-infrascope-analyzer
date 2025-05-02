@@ -191,7 +191,7 @@ class QFIAnalyzer:
         plt.close()
 
         print(f"Saved image to {save_path / file_name}")
-        
+
 
     def get_pixel_value(self, frame: int, height: int, width: int) -> float:
         """
@@ -289,6 +289,15 @@ class QFIAnalyzer:
             raise RuntimeError("No pixel array data available")
 
         return np.mean(self.pixel_array[frame])
+    
+    def standard_deviation_in_frame(self, frame: int) -> float:
+        """
+        Get the standard deviation of the pixel values in a specific frame.
+        """
+        if not self.pixel_array is not None:
+            raise RuntimeError("No pixel array data available")
+        
+        return np.std(self.pixel_array[frame])
     
     def get_frame_array(self, frame: int) -> NDArray:
         """
