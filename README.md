@@ -2,6 +2,12 @@
 
 A Python tool for analyzing and visualizing Quantum Focus Instruments (QFI) Infrascope data from text files.
 
+## Clone Repository
+
+```bash
+git clone https://github.com/trevin-lee/qfi-infrascope-analyzer.git
+```
+
 ## Installation
 
 ```bash
